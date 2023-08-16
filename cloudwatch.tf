@@ -1,5 +1,5 @@
 resource "aws_cloudwatch_log_group" "example1" {
-  name = "example1"
+  name = "example1" 
 
   tags = {
     Environment = "production"
@@ -10,7 +10,7 @@ resource "aws_cloudwatch_log_group" "example1" {
 resource "aws_cloudwatch_log_group" "example2" {
   name = "example2"
 
-  kms_key_id = "cwKey"
+  kms_key_id = "cwKey" 
   retention_in_days = 90
   tags = {
     Environment = "production"
@@ -19,7 +19,7 @@ resource "aws_cloudwatch_log_group" "example2" {
 }
 
 resource "aws_cloudwatch_log_group" "example3" {
-  name = "example3"
+  name = "example3" 
 
   kms_key_id = "cwKey"
   retention_in_days = 90
@@ -30,7 +30,7 @@ resource "aws_cloudwatch_log_group" "example3" {
 }
 
 resource "aws_cloudwatch_log_group" "example4" {
-  name = "example4"
+  name = "example4" 
 
   kms_key_id = "cwKey"
   retention_in_days = 90
